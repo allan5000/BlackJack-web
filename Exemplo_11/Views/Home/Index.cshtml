@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "IMC";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome!!!</h1>
+    <p>Aprender sobre ... <a href="https://tableless.com.br/mvc-afinal-e-o-que/" target="_blank">MVC</a>.</p>
+</div>
+<form class="container" id="formulario">
+
+    <div class="col-md-5">
+        <fieldset class="form-group">
+            <legend>IMC</legend>
+
+            <label for="peso">Peso: </label>
+            <input type="text" name="peso" class="form-control" id="peso" />
+
+            <label for="altura">Altura:</label>
+            <input type="text" name="altura" class="form-control" id="altura" />
+
+            <label for="imc">IMC: </label>
+            <input type="text" name="imc" class="form-control" disabled="disabled" id="imc" />
+            <p id="resposta">...</p>
+            <br />
+
+            <button type="button" class="btn-success" id="cls" value="limpa" onclick="resetar()">Limpar</button>
+            <button type="button" class="btn-success" onclick="calcularIMC()">Calcular IMC</button>
+        </fieldset>
+    </div>
+</form>
